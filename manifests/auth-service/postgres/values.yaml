@@ -8,3 +8,6 @@ primary:
     enabled: false  # for dev/demo; set to true and add storage config for production
 
 fullnameOverride: auth-db
+
+passwordUpdateJob:
+  enabled: false
