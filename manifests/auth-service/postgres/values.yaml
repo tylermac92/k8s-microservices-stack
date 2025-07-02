@@ -27,3 +27,5 @@ primary:
     enabled: false
   service:
     labels: {}
+    headless:
+      annotations: {}
