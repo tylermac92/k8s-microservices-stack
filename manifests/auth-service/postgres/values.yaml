@@ -18,3 +18,7 @@ metrics:
 readReplicas:
   enabled: false
   extendedConfiguration: ""
+
+global:
+  postgresql:
+    fullnameOverride: ""
