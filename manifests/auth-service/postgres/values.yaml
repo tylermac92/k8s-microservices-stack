@@ -11,3 +11,6 @@ fullnameOverride: auth-db
 
 passwordUpdateJob:
   enabled: false
+
+metrics:
+  enabled: false
