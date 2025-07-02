@@ -1,0 +1,14 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: auth-service
+  namespace: auth-service
+spec:
+  entryPoints:
+    - web
+  routes:
+    - match: Host(`auth.local.example.com`)
+      kind: Rule
+      services:
+        - name: auth-service
+          port: 8000
