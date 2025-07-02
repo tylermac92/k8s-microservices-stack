@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: auth-service
+  namespace: argo-cd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/tylermac92/k8s-microservices-stack
+    targetRevision: HEAD
+    path: manifests/auth-service
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+      
