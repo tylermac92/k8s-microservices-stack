@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: auth-service
-          image: tylermac92/auth-service:1.0
+          image: tylermac92/auth-service:1.0.1
           imagePullPolicy: Always
           ports:
             - containerPort: 80
