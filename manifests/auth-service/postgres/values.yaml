@@ -14,3 +14,7 @@ passwordUpdateJob:
 
 metrics:
   enabled: false
+
+readReplicas:
+  enabled: false
+  extendedConfiguration: ""
