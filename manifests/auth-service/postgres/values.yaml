@@ -3,10 +3,6 @@ auth:
   password: authpass
   database: auth
 
-primary:
-  persistence:
-    enabled: false  # for dev/demo; set to true and add storage config for production
-
 fullnameOverride: auth-db
 
 passwordUpdateJob:
@@ -22,3 +18,9 @@ readReplicas:
 global:
   postgresql:
     fullnameOverride: ""
+
+primary:
+  persistence:
+    enabled: false
+  service:
+    labels: {}
