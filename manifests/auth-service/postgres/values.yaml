@@ -18,6 +18,9 @@ readReplicas:
 global:
   postgresql:
     fullnameOverride: ""
+    service:
+      ports:
+        postgresql: 5432
 
 primary:
   persistence:
